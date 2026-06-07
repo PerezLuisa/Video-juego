@@ -1,0 +1,12 @@
+{
+  "name": "Alzheimer Early Stage",
+  "short_name": "AES",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#F8FBFB",
+  "theme_color": "#1F7A78",
+  "description": "Plataforma de estimulacion cognitiva para Alzheimer en etapa temprana.",
+  "orientation": "portrait-primary",
+  "prefer_related_applications": false,
+  "icons": []
+}

@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alzheimer Early Stage</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brand-mark">AES</div>
+          <div>
+            <p>Proyecto de grado</p>
+            <h1>Alzheimer Early Stage</h1>
+          </div>
+        </div>
+
+        <nav class="nav" aria-label="Navegacion principal">
+          <button class="nav-item active" data-view="overview">Inicio</button>
+          <button class="nav-item" data-view="patient">Paciente</button>
+          <button class="nav-item" data-view="caregiver">Cuidador</button>
+          <button class="nav-item" data-view="doctor">Medico</button>
+          <button class="nav-item" data-view="games">Minijuegos</button>
+          <button class="nav-item" data-view="progress">Avances</button>
+        </nav>
+
+        <section class="status-panel">
+          <span class="status-dot"></span>
+          <div>
+            <strong>Prototipo visible</strong>
+            <p>Version inicial para sustentacion y seguimiento.</p>
+          </div>
+        </section>
+      </aside>
+
+      <main class="content">
+        <section class="topbar">
+          <div>
+            <p class="eyebrow">Plataforma de estimulacion cognitiva</p>
+            <h2 id="view-title">Panel principal</h2>
+          </div>
+          <div class="profile-pill">
+            <span>Paciente demo</span>
+            <strong>Etapa 1</strong>
+          </div>
+        </section>
+
+        <section class="view active" id="overview">
+          <div class="hero">
+            <div class="hero-copy">
+              <p class="eyebrow">Apoyo al tratamiento del Alzheimer en etapa temprana</p>
+              <h3>Una app accesible para estimular memoria, atencion, lenguaje, calculo y orientacion.</h3>
+              <p>
+                El proyecto conecta tres roles: paciente, cuidador y medico. Cada sesion propone ejercicios
+                simples, mide progreso y genera informacion util para acompanar la terapia.
+              </p>
+              <div class="hero-actions">
+                <button class="primary-action" data-jump="games">Probar minijuego</button>
+                <button class="secondary-action" data-jump="progress">Ver avances</button>
+              </div>
+            </div>
+            <div class="hero-visual" aria-label="Resumen visual de la plataforma">
+              <div class="brain-card">
+                <span>Memoria</span>
+                <strong>84%</strong>
+              </div>
+              <div class="brain-card">
+                <span>Atencion</span>
+                <strong>76%</strong>
+              </div>
+              <div class="brain-card">
+                <span>Adherencia</span>
+                <strong>5 dias</strong>
+              </div>
+            </div>
+          </div>
+
+          <div class="metrics-grid">
+            <article>
+              <span>Objetivo general</span>
+              <p>Desarrollar una herramienta digital integral y accesible para estimulacion cognitiva.</p>
+            </article>
+            <article>
+              <span>Usuarios</span>
+              <p>Pacientes en etapa 1, familiares cuidadores y profesionales de salud.</p>
+            </article>
+            <article>
+              <span>Diferenciador</span>
+              <p>Integracion total de actividades, seguimiento, recordatorios y reportes clinicos.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="view" id="patient">
+          <div class="section-header">
+            <p class="eyebrow">Modulo Paciente</p>
+            <h3>Sesiones simples, grandes botones y progreso visible.</h3>
+          </div>
+          <div class="two-column">
+            <div class="panel">
+              <h4>Rutina de hoy</h4>
+              <div class="task-list">
+                <label><input type="checkbox" checked /> Memoria visual</label>
+                <label><input type="checkbox" /> Atencion sostenida</label>
+                <label><input type="checkbox" /> Orientacion diaria</label>
+              </div>
+            </div>
+            <div class="panel">
+              <h4>Banco de recuerdos</h4>
+              <p class="soft-text">Espacio para usar fotos, nombres y lugares significativos en ejercicios personalizados.</p>
+              <div class="memory-strip">
+                <span>Familia</span>
+                <span>Casa</span>
+                <span>Musica</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="view" id="caregiver">
+          <div class="section-header">
+            <p class="eyebrow">Modulo Cuidador</p>
+            <h3>Acompanamiento, recordatorios y datos faciles de entender.</h3>
+          </div>
+          <div class="dashboard-grid">
+            <article class="panel">
+              <h4>Recordatorios</h4>
+              <ul class="clean-list">
+                <li>10:00 a. m. - Sesion cognitiva</li>
+                <li>2:00 p. m. - Hidratacion</li>
+                <li>6:00 p. m. - Actividad familiar</li>
+              </ul>
+            </article>
+            <article class="panel">
+              <h4>Alertas suaves</h4>
+              <p class="soft-text">El sistema puede avisar cambios de uso, irritabilidad reportada o abandono de sesiones.</p>
+            </article>
+            <article class="panel wide">
+              <h4>Apoyo entre cuidadores</h4>
+              <p class="soft-text">Se proyecta una comunidad moderada con consejos, recursos educativos y experiencias.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="view" id="doctor">
+          <div class="section-header">
+            <p class="eyebrow">Modulo Medico</p>
+            <h3>Reportes clinicos para comparar evolucion y tomar decisiones.</h3>
+          </div>
+          <div class="report-layout">
+            <div class="panel">
+              <h4>Resumen clinico</h4>
+              <dl class="summary-list">
+                <div><dt>Paciente</dt><dd>Maria Gomez</dd></div>
+                <div><dt>Diagnostico</dt><dd>Alzheimer etapa inicial</dd></div>
+                <div><dt>Adherencia</dt><dd>82%</dd></div>
+                <div><dt>Riesgo</dt><dd>Moderado bajo</dd></div>
+              </dl>
+            </div>
+            <div class="panel">
+              <h4>Patrones detectados</h4>
+              <p class="soft-text">Mejor respuesta en actividades visuales. Mayor dificultad en calculo simple despues de sesiones largas.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="view" id="games">
+          <div class="section-header">
+            <p class="eyebrow">Minijuegos cognitivos</p>
+            <h3>Prototipo jugable de memoria visual.</h3>
+          </div>
+          <div class="game-layout">
+            <div class="game-board" id="memory-board" aria-label="Juego de memoria"></div>
+            <div class="panel game-panel">
+              <h4>Memoria</h4>
+              <p class="soft-text">Encuentra las parejas. El prototipo mide intentos y aciertos para alimentar el seguimiento.</p>
+              <div class="game-stats">
+                <span>Intentos <strong id="tries">0</strong></span>
+                <span>Parejas <strong id="matches">0</strong>/6</span>
+              </div>
+              <button class="primary-action" id="reset-game">Reiniciar</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="view" id="progress">
+          <div class="section-header">
+            <p class="eyebrow">Avances del proyecto</p>
+            <h3>Ruta de desarrollo para presentar progreso academico.</h3>
+          </div>
+          <div class="timeline">
+            <article class="timeline-item done">
+              <span>1</span>
+              <div>
+                <h4>Investigacion y problema</h4>
+                <p>Documento base, contexto del Alzheimer y justificacion en Colombia.</p>
+              </div>
+            </article>
+            <article class="timeline-item done">
+              <span>2</span>
+              <div>
+                <h4>Arquitectura de modulos</h4>
+                <p>Paciente, cuidador y medico definidos como roles principales.</p>
+              </div>
+            </article>
+            <article class="timeline-item current">
+              <span>3</span>
+              <div>
+                <h4>Prototipo visible</h4>
+                <p>Interfaz navegable y primer minijuego funcional para demostracion.</p>
+              </div>
+            </article>
+            <article class="timeline-item">
+              <span>4</span>
+              <div>
+                <h4>Validacion</h4>
+                <p>Pruebas con usuarios, ajustes de accesibilidad y reportes exportables.</p>
+              </div>
+            </article>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
